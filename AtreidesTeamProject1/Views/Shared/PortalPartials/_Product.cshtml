@@ -1,0 +1,54 @@
+﻿@model AtreidesTeamProject1.Models.AllModels
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="cardHeader">
+    <h2>Recent Products</h2>
+    <div class="search">
+        <label>
+            <input type="text" id="searchProduct" placeholder="Search" />
+            <i class="bi bi-search"></i>
+        </label>
+    </div>
+    <a asp-action="CreateProduct" class="btn">Add Product</a>
+</div>
+<table id="productTable">
+    <thead>
+        <tr>
+            <td>Prodcut Name</td>
+            <td>Description</td>
+            <td>Price</td>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Employees == null)
+        {
+            <tr><td colspan="3" class="text-center">There are Currently No Products</td></tr>
+        }
+        else
+        {
+            @foreach (var p in Model.Products)
+            {
+                if (p.IsArchived == false)
+                {
+                    <tr>
+                        <td>@p.Name</td>
+                        <td>@p.Description</td>
+                        <td>@p.Price</td>
+                        <td><a class="btn" asp-action="UpdateP" asp-route-id="@p.ProductID">Edit</a></td>
+
+                        <td>
+                            <form asp-action="DeleteP" method="post" asp-route-id="@p.ProductID">
+                                <button class="btn">Sold Out!</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+        }
+    </tbody>
+</table>

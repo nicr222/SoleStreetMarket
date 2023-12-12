@@ -1,0 +1,50 @@
+﻿@model Department
+@{
+    ViewData["Title"] = "Update Department";
+    <!-- Include stylesheets for the page -->
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="~/css/employeeRegisterValidationErrorMessage.css" />
+}
+
+<!-- Main container for the page -->
+<div class="container">
+    <!-- Section for updating a department -->
+    <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                    <!-- Card for department details -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="pt-4 pb-2">
+                                <!-- Title and description -->
+                                <h5 class="card-title text-center pb-0 fs-4">Update Department</h5>
+                                <p class="text-center small">Enter the Department details</p>
+                            </div>
+
+                            <!-- Form for updating department -->
+                            <form method="post" asp-action="UpdateD">
+                                <!-- Department Name input -->
+                                <div class="form-control">
+                                    <label for="name">Department Name</label>
+                                    <input type="text" name="departmentName" class="form-control" id="name" asp-for="DepartmentName" required>
+                                    <span asp-validation-for="DepartmentName" class="text-danger"></span>
+                                </div></br>
+
+                                <!-- Department Description input -->
+                                <div class="form-control">
+                                    <label for="description">Department Description</label>
+                                    <textarea name="departmentDesc" class="form-control" id="description" asp-for="DepartmentDesc" required></textarea>
+                                    <span asp-validation-for="DepartmentDesc" class="text-danger"></span>
+                                </div></br>
+
+                                <!-- Submit button -->
+                                <div class="text-center"><button type="submit">Update Department</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

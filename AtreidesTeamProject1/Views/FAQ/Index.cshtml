@@ -1,0 +1,109 @@
+﻿@model FAQ
+
+@{
+    ViewData["Title"] = "FAQ Page";
+    <link rel="stylesheet" href="css/FAQ.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="js/faq.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+}
+
+<!--Info Section-->
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>FAQ</h2> <!--Title Section-->
+        </div>
+</section>
+
+<!--FAQ Section-->
+<div id="zoom_wrapper" class="w3-animate-zoom negative-container">  
+
+    <div id="Category1" class="w3-container category w3-animate-opacity">
+    <main>
+
+      <div class="container">
+
+        <div class="accordion">
+	
+        <!-- START OF AN FAQ QUESTION -->
+	     <div class="accordion__item">
+            <div class="accordion__item__header">
+             Do you ship internationally?
+            </div>
+    
+            <div class="accordion__item__content">
+                  <h5>Yes, we offer international shipping. Shipping costs and delivery times vary by location.</h5>   
+            </div>
+          </div>
+          <!-- END OF AN FAQ QUESTION -->
+	
+          <!-- START OF AN FAQ QUESTION -->
+          <div class="accordion__item">
+            <div class="accordion__item__header">
+             Are exchanges available?
+            </div>
+    
+            <div class="accordion__item__content">
+              <h5>Yes, we offer exchanges for size-related issues. Contact our customer service, and we'll guide you through the process.</h5>
+                
+            </div>
+          </div>
+          <!-- END OF AN FAQ QUESTION -->
+
+          <!-- START OF AN FAQ QUESTION -->
+          <div class="accordion__item">
+            <div class="accordion__item__header">
+             What is your return policy?
+            </div>
+    
+            <div class="accordion__item__content">
+              <h5>We offer a 30 day return policy. Shoes must be unworn, in their original packaging, and accompanied by the original receipt. Visit our Returns page for detailed instructions.</h5>
+            </div>
+          </div>
+          <!-- END OF AN FAQ QUESTION -->
+          
+          <!-- START OF AN FAQ QUESTION -->
+          <div class="accordion__item">
+            <div class="accordion__item__header">
+             How can I track my order?
+            </div>
+    
+            <div class="accordion__item__content">
+              <h5>Once your order ships, you'll receive a confirmation email with a tracking number. Use this number on our website's "Track Order" page or the shipping carrier's website.</h5>
+            </div>
+          </div>
+          <!-- END OF AN FAQ QUESTION -->
+
+         <!-- START OF AN FAQ QUESTION -->
+	     <div class="accordion__item">
+            <div class="accordion__item__header">
+             What payment methods do you accept?
+            </div>
+    
+            <div class="accordion__item__content">
+              <h5>We accept major credit cards (Visa, MasterCard, American Express) and online payment methods like PayPal. For more details, visit our Payments page.</h5>
+            </div>
+          </div>
+          <!-- END OF AN FAQ QUESTION -->
+
+         <!-- START OF AN FAQ QUESTION -->
+	     <div class="accordion__item">
+            <div class="accordion__item__header">
+             Can I change or cancel my order after it's placed?
+            </div>
+    
+            <div class="accordion__item__content">
+              <h5>Once an order is confirmed, it enters processing immediately. Contact our customer service within 24 hours for any changes. After that period, we can't guarantee modifications.</h5>   
+            </div>
+          </div>
+          <!-- END OF AN FAQ QUESTION -->
+
+
+
+        </div> <!-- id accordion end -->
+      </div>
+    </main>
+    </div>
+
+    <button class="w3-bar-item w3-button testbtn w3-padding-16" style="font-size:24px; opacity:0%;" onclick="openCategory(event,'Category1')">Category1</button>

@@ -1,0 +1,77 @@
+﻿
+body{
+    text-align: center;
+    padding-bottom: 70px;
+}
+#cart{
+    background-color: white
+}
+.product-image img {
+    width: 100px;
+    height: 100px;
+}
+/*text styling*/
+.promo-code-area h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+/*button styling*/
+.btn {
+    background-color: #5c9ead;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+}
+    .btn:hover {
+        background-color: #326273;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+/*moves the total data to the right*/
+.table tfoot tr td:last-child{
+    text-align: right;
+}
+.table-totals {
+    align-content: right;
+}
+/*Moves the checkout button in the center*/
+.checkout-methods {
+    text-align: center;
+}
+
+.paddingbottom{
+    padding-bottom: 60px;
+}
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media (max-width: 768px) {
+    /* Apply mobile-friendly styles here */
+    /* Hide table header (thead) on small screens */
+    table thead {
+        display: none;
+    }
+
+    /* Center-align table data (tbody) cells on small screens */
+    table tbody td {
+        text-align: center;
+        padding: 5px; /* Add some spacing between cells */
+        display: block;
+    }
+
+    /* Display table rows as blocks for better stacking on small screens */
+    table tbody tr {
+        display: flex;
+        margin-bottom: 10px; /* Add space between rows */
+        border: 1px solid #ccc; /* Add a border to separate rows */
+    }
+
+    /* Style the table cell labels (th) in mobile view */
+    table tbody th {
+        font-weight: bold;
+        background-color: #f2f2f2; /* Add background color to distinguish headers */
+    }
+    footer{
+        line-height: 0!important;
+    }
+}

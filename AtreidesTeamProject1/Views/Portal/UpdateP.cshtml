@@ -1,0 +1,88 @@
+﻿@inject AtreidesTeamProject1.Services.IListService ListService
+@model Products
+@{
+    // Set the page title
+    ViewData["Title"] = "Update Product";
+
+    // Include stylesheets for the page
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="~/css/employeeRegisterValidationErrorMessage.css" />
+}
+
+<!-- Main container for the page -->
+<div class="container">
+    <!-- Section for updating a product -->
+    <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                    <!-- Card for product details -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="pt-4 pb-2">
+                                <!-- Title and description -->
+                                <h5 class="card-title text-center pb-0 fs-4">Update Product</h5>
+                                <p class="text-center small">Enter the product details</p>
+                            </div>
+
+                            <!-- Form for updating product -->
+                            <form method="post" asp-action="UpdateP">
+                                <!-- Item Type selection -->
+                                <div class="form-control">
+                                    <label>Item Type</label>
+                                    <select class="form-control" name="TypeID" asp-for="TypeID"
+                                            asp-items="ListService.GetItemList().Select(x => new SelectListItem { Text = x.Name, Value = x.ItemId.ToString()})">
+                                        <option selected="selected" value="--Select--" required>--Select--</option>
+                                    </select>
+                                    <span asp-validation-for="TypeID" class="text-danger"></span>
+                                </div></br>
+
+                                <!-- Product Name input -->
+                                <div class="form-control">
+                                    <label>Name</label>
+                                    <input class="form-control" name="Name" asp-for="Name" required />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div></br>
+
+                                <!-- Description input -->
+                                <div class="form-control">
+                                    <label for="name">Description</label>
+                                    <input type="text" class="form-control" name="description" id="description" asp-for="Description" required>
+                                    <span asp-validation-for="Description" class="text-danger"></span>
+                                </div></br>
+
+                                <!-- Department selection -->
+                                <div class="form-control">
+                                    <label for="name">Department</label>
+                                    <select class="form-control" name="DepartmentID" asp-for="DepartmentID"
+                                            asp-items="ListService.GetDepartmentList().Select(x => new SelectListItem { Text = x.DepartmentName, Value = x.DepartmentId.ToString()})">
+                                        <option selected="selected" value="--Select--" required>--Select--</option>
+                                    </select>
+                                    <span asp-validation-for="DepartmentID" class="text-danger"></span>
+                                </div></br>
+
+                                <!-- Price input -->
+                                <div class="form-control">
+                                    <label for="name">Price</label>
+                                    <input class="form-control" name="Price" rows="10" asp-for="Price" required />
+                                    <span asp-validation-for="Price" class="text-danger"></span>
+                                </div></br>
+
+                                <!-- URL input -->
+                                <div class="form-control">
+                                    <label for="name">URL</label>
+                                    <input class="form-control" name="Url" rows="10" asp-for="Url" required />
+                                    <span asp-validation-for="Url" class="text-danger"></span>
+                                </div></br>
+
+                                <!-- Submit button -->
+                                <div class="text-center"><button type="submit">Update Product</button></div>
+                                <div class="text-center"><button asp-action="Index" class="btn btn-dark">Add Product</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,153 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AtreidesTeamProject1
+build_property.RootNamespace = AtreidesTeamProject1
+build_property.ProjectDir = C:\Users\Nic\Desktop\SoleStreet\AtreidesTeamProject1\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Nic\Desktop\SoleStreet\AtreidesTeamProject1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/About/Employees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcRW1wbG95ZWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Account/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Error/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/FAQ/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFRXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Portal/CreateDepartment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFsXENyZWF0ZURlcGFydG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Portal/CreateEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFsXENyZWF0ZUVtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Portal/CreateItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFsXENyZWF0ZUl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Portal/CreateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFsXENyZWF0ZVByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Portal/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Portal/UpdateD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFsXFVwZGF0ZUQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Portal/UpdateE.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFsXFVwZGF0ZUUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Portal/UpdateP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFsXFVwZGF0ZVAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Sales/AddToSales.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNcQWRkVG9TYWxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Sales/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/ServiceMessage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU1lc3NhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Shared/PortalPartials/_Department.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBvcnRhbFBhcnRpYWxzXF9EZXBhcnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Shared/PortalPartials/_Employee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBvcnRhbFBhcnRpYWxzXF9FbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Shared/PortalPartials/_Feedback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBvcnRhbFBhcnRpYWxzXF9GZWVkYmFjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Shared/PortalPartials/_Messages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBvcnRhbFBhcnRpYWxzXF9NZXNzYWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Shared/PortalPartials/_Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBvcnRhbFBhcnRpYWxzXF9PcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Shared/PortalPartials/_Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBvcnRhbFBhcnRpYWxzXF9Qcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Shared/_ChangePasswordPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DaGFuZ2VQYXNzd29yZFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/Desktop/SoleStreet/AtreidesTeamProject1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nqekpq8jf0

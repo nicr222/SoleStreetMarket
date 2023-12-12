@@ -1,0 +1,125 @@
+﻿@inject AtreidesTeamProject1.Services.IListService ListService
+@model AboutUs
+
+<!-- Set the page title to "Add Employee" -->
+ViewData["Title"] = "Add Employee";
+
+<!-- Include the stylesheet for employee registration validation error messages -->
+<link rel="stylesheet" href="/css/employeeRegisterValidationErrorMessage.css" />
+
+<!-- Include Bootstrap Icons and additional styling for the page -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/css/loginadvanced.css" />
+
+<!-- Include JavaScript for employee registration validation -->
+<script src="~/js/employeeRegisterValidation.js"></script>
+
+<!-- Main content section -->
+<main>
+    <div class="container">
+        <!-- Section for employee registration -->
+        <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                        <!-- Card for employee registration -->
+                        <div class="card mb-3" style="border: 1px solid #5c9ead;">
+                            <div class="card-body">
+                                <div class="pt-4 pb-2">
+                                    <!-- Title and description -->
+                                    <h5 class="card-title text-center pb-0 fs-4">Add Employee</h5>
+                                    <p class="text-center small">Enter the employee details</p>
+                                </div>
+
+                                <!-- Form for registering an employee -->
+                                <form asp-action="RegisterEmployee" asp-controller="Account" class="row g-3 needs-validation" novalidate method="post">
+                                    <!-- Employee's Name input -->
+                                    <div class="col-12">
+                                        <label for="name" class="form-label">Employee's Name</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person-check"></i></span>
+                                            <input type="text" name="name" class="form-control" id="name" asp-for="Name" required />
+                                            <div class="invalid-feedback">Please, enter the employee's name.</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email input -->
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-envelope"></i></span>
+                                            <input type="email" name="Email" class="form-control" id="email" required />
+                                            <div class="invalid-feedback">Please enter a valid Email address.</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Phone Number input -->
+                                    <div class="col-12">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-telephone"></i></span>
+                                            <input type="tel" name="Phone" class="form-control" id="phone" required />
+                                            <div class="invalid-feedback">Invalid Phone Number. Please enter 10 to 15 numeric characters.</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Username input -->
+                                    <div class="col-12">
+                                        <label for="username" class="form-label">Username</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person"></i></span>
+                                            <input type="text" name="Username" class="form-control" id="username" required />
+                                            <div class="invalid-feedback">Please choose a username.</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Password input -->
+                                    <div class="col-12">
+                                        <label for="password" class="form-label">Password</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-key"></i></span>
+                                            <input type="password" name="Password" class="form-control" id="password" required />
+                                            <div class="invalid-feedback">Please enter your password! Password should be at least 8 characters long.</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Department selection -->
+                                    <div class="col-12">
+                                        <label for="department" class="form-label">Department</label>
+                                        <select class="form-control" asp-for="DepartmentID" name="DepartmentID"
+                                                asp-items="ListService.GetDepartmentList().Select(x => new SelectListItem { Text = x.DepartmentName, Value = x.DepartmentId.ToString()})">
+                                            <option selected="selected" value="">--Select--</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please, select a department.</div>
+                                    </div>
+
+                                    <!-- Date of Birth input -->
+                                    <div class="col-12">
+                                        <label for="date" class="form-label">Date of Birth</label>
+                                        <input type="date" name="dateofbirth" class="form-control" id="date" asp-for="DateOfBirth" required />
+                                        <div class="invalid-feedback">Please, select a date of birth.</div>
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100" type="submit">Register Employee</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script to display validation errors if any -->
+    <script>
+        // Fetch list of validation errors from the controller and use JSON.Net to convert it into a JSON-formatted string.
+        var errors = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewData["ValidationErrors"]));
+        if (errors && errors.length) {
+            alert(errors.join('\n'));
+        }
+    </script>
+</main>

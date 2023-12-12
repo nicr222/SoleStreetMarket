@@ -1,0 +1,54 @@
+﻿@model AtreidesTeamProject1.Models.AllModels
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!--Employee table-->
+<div class="cardHeader">
+    <h2>Employees</h2>
+    <div class="search">
+        <label>
+            <input type="text" id="searchEmp" placeholder="Search" />
+            <i class="bi bi-search"></i>
+        </label>
+    </div>
+    <a asp-action="CreateEmployee" class="btn">Add Employee</a>
+</div>
+<table id="empTable">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Department</td>
+            <td>Date of Birth</td>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Employees == null)
+        {
+            <tr><td colspan="3" class="text-center">There are Currently No Employees</td></tr>
+        }
+        else
+        {
+            @foreach (var e in Model.Employees)
+            {
+                if (e.IsArchived == false)
+                {
+                    <tr>
+                        <td>@e.Name</td>
+                        <td>@e.Department.ToString()</td>
+                        <td>@e.DateOfBirth</td>
+                        <td><a class="btn" asp-action="UpdateE" asp-route-id="@e.EmployeeID">Edit</a></td>
+
+                        <td>
+                            <form asp-action="DeleteE" method="post" asp-route-id="@e.EmployeeID">
+                                <button class="btn">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+        }
+    </tbody>
+</table>

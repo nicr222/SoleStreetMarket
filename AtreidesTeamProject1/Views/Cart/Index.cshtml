@@ -1,0 +1,167 @@
+﻿@model List<Cart>
+
+@{
+    ViewData["Title"] = "Cart Page";
+    decimal Total = 0;
+    int TotalQuantity = 0;
+}
+<link rel="stylesheet" href="~/css/cart.css" />
+
+<br /><br />
+<section>
+    @* if it is a success message it will display a success else an error message *@
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-warning">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+   <div id="cart" class="container border">
+        <div class="row">
+            <div class="">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="thumbnail-col"></th>
+                                        <th class="product-col">Product</th>
+                                        <th class="price-col">Price</th>
+                                        <th class="qty-col">Quantity</th>
+                                        <th class="text-right">Subtotal</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null)
+                                    {
+                                        @* Running through all of the products in the cart and displaying them in the cart. *@
+                                        @foreach(var p in Model)
+                                        {
+                                            <tr>
+                                                <td><figure class="product-image-container">
+                                                    <a href="#!" class="product-image">
+                                                        <img src="@p.Products.Url"
+                                                             alt="product">
+                                                    </a>
+                                                </figure>
+                                                </td>
+                                                <td>@p.Products.Name</td>
+                                                <td id="price">@p.Products.Price</td>
+                                                <td id="quantity">@p.Quantity</td>
+                                                <td class="text-right" id="subtotal"><span class="subtotal-price"></span></td>
+                                                <td>
+                                                    <form asp-action="Delete" method="post"  asp-route-id="@p.ProductID">
+                                                        <button class="btn btn-sm btn-danger">Delete</button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                            @if (p.Quantity == 1)
+                                            {
+                                                Total += p.Products.Price;
+                                                TotalQuantity++;
+                                            }
+                                            else
+                                            {
+                                                int Quantity = p.Quantity;
+                                                TotalQuantity += Quantity;
+                                                decimal Price = p.Products.Price;
+                                                Total += Price * Quantity;
+                                            }
+                                        }
+                                        var Tax = Total * .05m;
+                                        Total += Tax;
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class=" col-md-4">
+                        <div class="cart-summary">
+                            <h3>CART TOTALS</h3>
+
+                            <table class="table">
+                                @* <tbody">
+                                    <div id="codeArea">
+                                        <tr>
+                                            <td colspan="2" class="text-left promo-code-area">
+                                                <h3>Promo Code</h3>
+
+                                                <div class="cart-discount">
+                                                    <form action="#">
+                                                        <div class="input-group">
+                                                            <input type="text" id="discountCode" class="form-control form-control-sm"
+                                                                   placeholder="Coupon Code" required="">
+                                                            <div class="input-group-append">
+                                                            <button id="applyCouponButton" class="btn btn-danger" >
+                                                                    Apply
+                                                                    Coupon
+                                                                </button>
+                                                            </div>
+                                                        </div><!-- End .input-group -->
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </div>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Name: </td>
+                                        <td><input /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address: </td>
+                                        <td><input /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Credit Card #</td>
+                                        <td><input /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone: </td>
+                                        <td><input /></td>
+                                    </tr>
+                                </tbody> *@
+                                <tfoo>
+                                    <tr class="tax">
+                                        <td>Tax</td>
+                                        <td id="tax">$17.90</td>
+                                    </tr>
+                                    <tr class="total">
+                                        <td><b>Total</b></td>
+                                        <td asp-for="Total" id="total">0.00</td>
+                                    </tr>
+                                </tfoo>
+                            </table>
+
+                            <div class="checkout-methods">
+                                <a id="checkoutLink"  class="btn btn-danger" onclick="PopulateInfo()" 
+                                   asp-area="" asp-action="CartInfoForm"
+                                asp-route-total="@Total" asp-route-quantity="@TotalQuantity">
+                                    Proceed to Checkout
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- End .cart-summary -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/cart.js"></script>

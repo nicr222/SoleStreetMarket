@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - AtreidesTeamProject1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AtreidesTeamProject1.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+            <div class="container">
+                <!-- Brand/logo linked to Home/Index -->
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <!-- Brand name styled with multiple colors -->
+                    <span class="text-with-shadow" style="color: #eeeeee;">Sole</span>
+                    <span class="text-with-shadow" style="color: #ef6603;">Street</span>
+                    <span class="text-with-shadow" style="color: #eeeeee;">Market</span>
+                </a>
+                <!-- Navbar toggler for responsive design -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar content -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar links -->
+                    <ul class="navbar-nav me-auto">
+                        <!-- Home link -->
+                        <li class="nav-item">
+                            <a class="nav-bar-white nav-link nav-link-ltr text-with-shadow" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <!-- Products link -->
+                        <li class="nav-item">
+                            <a class="nav-bar-white nav-link nav-link-ltr text-with-shadow" asp-area="" asp-controller="Product" asp-action="Index">Products</a>
+                        </li>
+                        <!-- About link -->
+                        <li class="nav-item">
+                            <a class="nav-bar-white nav-link nav-link-ltr text-with-shadow" asp-area="" asp-controller="About" asp-action="Index">About</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-bar-white nav-link nav-link-ltr text-with-shadow dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Contact
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="contactDropdown" id="contactDropdownMenu">
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Contact" asp-action="Index">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-area="" asp-controller="FAQ" asp-action="Index">FAQ</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        @* <li class="nav-item">
+                            <a class="nav-bar-white nav-link nav-link-ltr text-with-shadow" asp-area="" asp-controller="Account" asp-action="LogIn">Log In</a>
+                        </li> *@
+
+                        @{
+                            var loggedInUser = Context.Session.GetString("LoggedInUser"); //Get the username of logged-in user from the session state.
+                        }
+
+                        @if (string.IsNullOrEmpty(loggedInUser)) 
+                        {
+                            <li class="nav-item">
+                                <!-- Login link -->
+                                <a class="nav-bar-white nav-link nav-link-ltr text-with-shadow" asp-area="" asp-controller="Account" asp-action="LogIn">Log In</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <!-- Profile link -->
+                            <li class="nav-item">
+                                <a class="nav-bar-white nav-link nav-link-ltr text-with-shadow" asp-area="" asp-controller="Profile" asp-action="Index">Profile</a>
+                            </li>
+                            <!-- Sign out link -->
+                            <li class="nav-item">
+                                <a class="nav-bar-white nav-link nav-link-ltr text-with-shadow" asp-area="" asp-controller="Account" asp-action="Logout">Sign Out</a>
+                            </li>
+                        }
+                        <!-- Cart icon -->
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="navbar-cart-image nav-bar-white nav-link nav-link-ltr text-with-shadow" asp-area="" asp-controller="Cart" asp-action="Index">
+                                <!-- Change links here to actual cart page -->
+                                <img src="~/img/cartimage.png" width="30px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav><br /><br />
+    </header>
+    <div @* class="container" *@>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - AtreidesTeamProject1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRD+5ai6jjeq0f3NFqJ/lPuUj+9peIXuFa76n5qvi" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html> 

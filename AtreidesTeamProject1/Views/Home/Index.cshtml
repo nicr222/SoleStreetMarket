@@ -1,0 +1,194 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    <link rel="stylesheet" href="css/home.css" />
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+
+<script src="js/home.js" defer></script>
+
+
+@if (ViewBag.Username != null)
+{
+    <script>
+        alert('Welcome, @ViewBag.Username!');
+    </script>
+}
+
+
+
+<section id="home" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="homeCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="carousel-container">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Sole Street Market</span></h2>
+                <p class="animate__animated fanimate__adeInUp">Where Urban Style Meets Timeless Comfort. Explore the latest trends and find your perfect fit. Dive into a curated collection of today's top footwear, only a click away.".</p>
+                <a href="@Url.Action("Index", "Home")" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="carousel-container">
+                <h2 class="animate__animated animate__fadeInDown">Who We Are</h2>
+                <p class="animate__animated animate__fadeInUp">Dedicated artisans, sustainable choices, and timeless style. Dive deeper into our journey and values. Discover the essence of Sole Street Market.</p>
+                <a href=" @Url.Action("Index", "About")" class="btn-get-started animate__animated animate__fadeInUp scrollto">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <div class="carousel-container">
+                <h2 class="animate__animated animate__fadeInDown">Explore Our Collection</h2>
+                <p class="animate__animated animate__fadeInUp">Crafted with precision, designed for the streets. Every pair tells a story. Dive into Sole Street Market's curated range of footwear and find your next statement piece.</p>
+                <a href=" @Url.Action("Index", "Product")" class="btn-get-started animate__animated animate__fadeInUp scrollto">View Our Offerings</a>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#homeCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+
+        </a>
+
+        <a class="carousel-control-next" href="#homeCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+
+        </a>
+
+
+
+    </div>
+    <!-- SVG element with class "home-waves", defining a scalable vector graphic -->
+    <!-- viewBox attribute defines the coordinate system and dimensions for the SVG, and
+    preserveAspectRatio="none" ensures the SVG is not constrained by its aspect ratio, allowing it to stretch and fill its container-->
+    <svg class="home-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+            <!-- Defining a path with id "wave-path". This path describes a wave shape using a series of coordinates and curves. -->
+            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+        </defs>
+        <!-- Group element for the first wave, class "wave1" -->
+        <g class="wave1">
+            <!-- Using the defined wave path. The 'use' element references the wave path, positioning it at x="50" y="3". The fill color is a semi-transparent white. -->
+            <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+        </g>
+        <g class="wave2">
+            <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+        </g>
+        <g class="wave3">
+            <use xlink:href="#wave-path" x="50" y="9" fill="#d6d6d6">
+        </g>
+    </svg>
+</section>
+
+<!-- ======= Trend Section ======= -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+            <h2>Trending Now</h2>
+            <p>Our Upcoming Products</p>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-end" data-aos="fade-up">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-shoes">Shoes</li>
+            <li data-filter=".filter-boots">Boots</li>
+            <li data-filter=".filter-latest">Latest Arrival</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-latest filter-shoes">
+                <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Oceanic Pulse</h4>
+                    <p>Shoes</p>
+                    <a href="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Shoes"></a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-shoes">
+                <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1465877783223-4eba513e27c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Urban Myth</h4>
+                    <p>Shoes</p>
+                    <a href="https://images.unsplash.com/photo-1465877783223-4eba513e27c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Shoes"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-shoes">
+                <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1593010932917-92bd21088dee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Crater Crossover</h4>
+                    <p>Shoes</p>
+                    <a href="https://images.unsplash.com/photo-1593010932917-92bd21088dee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Shoes"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-shoes">
+                <div class="portfolio-img"><img src="https://plus.unsplash.com/premium_photo-1663100769321-9eb8fe5a8e6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Daydream Drifter</h4>
+                    <p>Shoes</p>
+                    <a href="https://plus.unsplash.com/premium_photo-1663100769321-9eb8fe5a8e6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Shoes"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-boots">
+                <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1554133818-7bb790d55236?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>StormStride</h4>
+                    <p>Boots</p>
+                    <a href="https://images.unsplash.com/photo-1554133818-7bb790d55236?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Boots"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-boots">
+                <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1600100315778-850119b19220?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Summit Stalker</h4>
+                    <p>Boots</p>
+                    <a href="https://images.unsplash.com/photo-1600100315778-850119b19220?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Boots"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-latest filter-shoes">
+                <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1518894781321-630e638d0742?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Nebula Walker</h4>
+                    <p>Shoes</p>
+                    <a href="https://images.unsplash.com/photo-1518894781321-630e638d0742?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Shoes"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-latest filter-boots">
+                <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1557870187-4304e2c2b357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Alpine Ascent</h4>
+                    <p>Boots</p>
+                    <a href="https://images.unsplash.com/photo-1557870187-4304e2c2b357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Boots"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-latest filter-boots">
+                <div class="portfolio-img"><img src="https://images.unsplash.com/photo-1631287381310-925554130169?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80" class="img-fluid" alt=""></div>
+                <div class="portfolio-info">
+                    <h4>Horizon Hiker</h4>
+                    <p>Boots</p>
+                    <a href="https://images.unsplash.com/photo-1631287381310-925554130169?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Boots"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<script src="/js/aos.js"></script>
+<script src="/js/isotope.pkgd.min.js"></script>
+
+

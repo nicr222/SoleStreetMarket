@@ -1,0 +1,147 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /*margin-bottom: 60px;*/
+    margin: 0;
+    padding: 0;
+    font-family: font-family: "Open Sans", sans-serif;
+    background: #d6d6d6;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: #5c9ead;
+    font-family: sans-serif !important;
+}
+
+.navbar-brand {
+    font-size: 1.75rem!important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    padding-top: 28px;
+}
+
+.navbar-cart-image {
+    margin-top:-5px !important;
+}
+
+a.nav-bar-white {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white !important;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.90;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+.text-with-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #ef6603;
+    opacity: 0.90;
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+<<<<<<< HEAD
+}
+
+.dropdown-menu {
+    display: none; /* Hide the dropdown menu by default */
+    position: absolute;
+    top: 100%; /* Position the dropdown below the link */
+    left: 0;
+    background-color: #fff; /* Dropdown background color */
+    border: 1px solid #ccc; /* Dropdown border */
+    padding: 5px 0; /* Dropdown padding */
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown menu on parent hover */
+}
+
+/* Style for dropdown items */
+.dropdown-menu .dropdown-item {
+    display: block;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #e8670a;
+}
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #f0f0f0; /* Background color on hover */
+    }
+
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff !important;
+    text-decoration: none !important;
+    background-color: #ef6603 !important;
+}
+
+/* Limit dropdown item width on mobile */
+@media (max-width: 767px) { /* Adjust the breakpoint to your desired mobile width */
+    .dropdown-menu {
+        width: 50px !important; /* Set the width of the dropdown container for mobile view */
+        max-width: 100% !important; /* Override max-width if needed */
+    }
+
+        .dropdown-menu .dropdown-item {
+            max-width: 50%; /* Reset max-width for individual dropdown items */
+            width: 50%; /* Make sure items span the entire width within the container */
+            white-space: normal; /* Allow wrapping of content for better visibility */
+        }
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    max-width: 20px;
+=======
+>>>>>>> 2b5647cdea035395a12b5602036fafd3802327dd
+}

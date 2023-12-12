@@ -1,0 +1,90 @@
+﻿@inject AtreidesTeamProject1.Services.IListService ListService
+@model AboutUs
+@{
+    <!-- Include stylesheets for the page -->
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="~/css/employeeRegisterValidationErrorMessage.css" />
+}
+
+<!-- Main container for the page -->
+<div class="container">
+    <!-- Section for updating an employee -->
+    <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                    <!-- Card for employee details -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="pt-4 pb-2">
+                                <!-- Title and description -->
+                                <h5 class="card-title text-center pb-0 fs-4">Update Employee</h5>
+                                <p class="text-center small">Enter the employee details</p>
+                            </div>
+
+                            <!-- Form for updating employee -->
+                            <form asp-action="UpdateE" asp-controller="Account" class="row g-3 needs-validation" novalidate method="post">
+                                <!-- Employee's Name input -->
+                                <div class="col-12">
+                                    <label for="name" class="form-label">Employee's Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" asp-for="Name" required />
+                                    <div class="invalid-feedback">Please, enter the employee's name.</div>
+                                </div>
+
+                                <!-- Email input -->
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" name="Email" class="form-control" id="email" required />
+                                    <div class="invalid-feedback">Please enter a valid Email address.</div>
+                                </div>
+
+                                <!-- Phone Number input -->
+                                <div class="col-12">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" name="Phone" class="form-control" id="phone" required />
+                                    <div class="invalid-feedback">Invalid Phone Number. Please enter 10 to 15 numeric characters.</div>
+                                </div>
+
+                                <!-- Username input -->
+                                <div class="col-12">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" name="Username" class="form-control" id="username" required />
+                                    <div class="invalid-feedback">Please choose a username.</div>
+                                </div>
+
+                                <!-- Password input -->
+                                <div class="col-12">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" name="Password" class="form-control" id="password" required />
+                                    <div class="invalid-feedback">Please enter your password! Password should be at least 8 characters long.</div>
+                                </div>
+
+                                <!-- Department selection -->
+                                <div class="col-12">
+                                    <label for="department" class="form-label">Department</label>
+                                    <select class="form-control" asp-for="DepartmentID" name="DepartmentID"
+                                            asp-items="ListService.GetDepartmentList().Select(x => new SelectListItem { Text = x.DepartmentName, Value = x.DepartmentId.ToString()})">
+                                        <option selected="selected" value="">--Select--</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please, select a department.</div>
+                                </div>
+
+                                <!-- Date of Birth input -->
+                                <div class="col-12">
+                                    <label for="date" class="form-label">Date of Birth</label>
+                                    <input type="date" name="dateofbirth" class="form-control" id="date" asp-for="DateOfBirth" required />
+                                    <div class="invalid-feedback">Please, select a date of birth.</div>
+                                </div>
+
+                                <!-- Submit button -->
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100" type="submit">Register Employee</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

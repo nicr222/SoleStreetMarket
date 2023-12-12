@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AtreidesTeamProject1.props" />
+</Project>

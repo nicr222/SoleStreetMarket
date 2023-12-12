@@ -1,0 +1,44 @@
+﻿/* Base input styling */
+input, select {
+    width: 100%;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Error message styling */
+.error-message {
+    color: #D8000C; /* A bright red for error color */
+    background-color: #FFD2D2; /* Light red background for contrast */
+    border: 1px solid #D8000C;
+    border-radius: 4px;
+    padding: 6px 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+    /* Error icon in the error message */
+    .error-message span {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+/* Styling for input fields with errors */
+input.invalid, select.invalid {
+    border-color: #D8000C; /* Bright red border for inputs with errors */
+    background-color: #FFEBEB; /* Light red background for better visual feedback */
+}
+
+
+/* Styling for valid input fields */
+input.valid, select.valid {
+    border-color: #4CAF50; /* Green border for valid inputs */
+    background-color: #E8F5E9; /* Light green background for a positive visual feedback */
+}
+
+

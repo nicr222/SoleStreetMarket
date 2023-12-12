@@ -1,0 +1,85 @@
+﻿
+/*Adjusting the size where the picture goes*/
+.card {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/*changing the color of the button*/
+.btn {
+    background-color: #5C9EAD;
+    border-color: #5C9EAD;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    border-radius: 6px;
+}
+    .btn:hover {
+        background-color: #326273;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        color: white;
+    }
+
+.filter-btn {
+    padding-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0 10px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    color: grey; 
+    transition: color 0.3s ease-in-out; 
+    text-decoration: none;
+}
+
+    .filter-btn:hover {
+      color: #ef6603;
+    }
+
+
+/*changing the color of the text in the button*/
+small{
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+/*adjusting the image in the card*/
+.card-img-top {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+small.key {
+    text-decoration: underline;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+    .btn-danger:focus {
+        box-shadow: none;
+    }
+
+p.justify-content-center {
+    font-size: 9px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:600px) {
+    .col-sm-4 {
+        margin-bottom: 50px;
+    }
+}
+
+.mb-0 {
+    text-align: right;
+}
+.mt-5{
+    padding-bottom: 60px;
+}
+h6 {
+    margin-top: 10px;
+}

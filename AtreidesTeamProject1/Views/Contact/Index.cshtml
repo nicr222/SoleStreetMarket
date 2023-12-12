@@ -1,0 +1,179 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+@* this bootstrap was conflicting with the other bootstrap link <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> *@
+<link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+<link rel="stylesheet" href="css/contact.css" />
+
+
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+            <p>
+                Thank you for stepping into the world of Sole Street Market, your one-stop destination for all things footwear fashion! Whether you're hunting for the latest trends, seeking comfort for your daily stride, or desiring a touch of class for special occasions, we're here to assist. Got a query or need assistance in finding your perfect pair? Reach out, and let's embark on this fashion-forward journey together.
+
+            </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                        <p>C226 Park Ave Bronx, NY 10451</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@outlook.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 111 2222 333</p>
+              </div>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3018.7519142650167!2d-73.90966542328226!3d40.83341257137557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s48%20Carson%20Ave.%0D%0ABronx%2C%20NY%2010453!5e0!3m2!1sen!2sus!4v1694050082520!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                @* <form action="forms/contact.php" method="post" role="form" class="php-email-form"> *@
+                <form asp-controller="ServiceMessage" asp-action="SubmitForm" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="Name" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">Your Email</label>
+                            <input type="email" class="form-control" name="Email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Subject</label>
+                        <input type="text" class="form-control" name="Subject" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Message</label>
+                        <textarea class="form-control" name="Message" rows="10" required></textarea>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+            </div>
+           @*  Show alert message *@
+            @if (TempData["MessageSent"] != null)
+            {
+                <div class="alert alert-success sent-message" id="success-alert">
+                    @TempData["MessageSent"]
+                </div>
+            }
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials">
+
+    <div class="container">
+
+        <div class="section-testimonial" data-aos="zoom-out">
+            <h2>Testimonials</h2>
+            <p>What they are saying about us</p>
+        </div>
+
+
+        <div class="testimonial-item">
+            <form action="/FeedBack/SubmitFeedback" method="post">
+                <h3>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </h3>
+
+                <div class="stars" name="rating" id="rating" required>
+                    <input class="star star-5" id="star-5" type="radio" name="rating" value="5" />
+                    <label class="star star-5" for="star-5"></label>
+
+                    <input class="star star-4" id="star-4" type="radio" name="rating" value="4" />
+                    <label class="star star-4" for="star-4"></label>
+
+                    <input class="star star-3" id="star-3" type="radio" name="rating" value="3" />
+                    <label class="star star-3" for="star-3"></label>
+
+                    <input class="star star-2" id="star-2" type="radio" name="rating" value="2" />
+                    <label class="star star-2" for="star-2"></label>
+
+                    <input class="star star-1" id="star-1" type="radio" name="rating" value="1" />
+                    <label class="star star-1" for="star-1"></label>
+                </div>
+
+
+                <p>
+                    <textarea name="feedback" id="feedback" rows="5" cols="30" required placeholder="Your feedback..."></textarea>
+                </p>
+
+                <div class="text-center"><button type="submit">Submit Feedback</button></div>
+            </form>
+        </div>
+        @if (TempData["FeedbackSent"] != null)
+        {
+            <div class="alert alert-success feedback-sent-message" id="feedback-success-alert">
+                @TempData["FeedbackSent"]
+            </div>
+        }
+
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+                @foreach (var feedback in Model)
+                {
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                @feedback.Comment
+                                <i class="bi bi-quote-icon-right"></i>
+                            </p>
+                            <h3>@feedback.CustomerName</h3>
+                            <div class="rating">
+                                @for (int i = 1; i <= feedback.Rating; i++)
+                                {
+                                    <i class="bi bi-star-fill"></i>
+                                }
+                                @for (int j = feedback.Rating + 1; j <= 5; j++)
+                                {
+                                    <i class="bi bi-star"></i>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+</section><!-- End Testimonials Section -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/servicemessagevalidation.js"> </script>
+<script src="/js/Contact.js"> </script>

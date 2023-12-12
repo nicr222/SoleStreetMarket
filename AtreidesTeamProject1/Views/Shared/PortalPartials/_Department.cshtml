@@ -1,0 +1,50 @@
+﻿@model AtreidesTeamProject1.Models.AllModels
+
+<!--Department table-->
+<div class="cardHeader">
+    <h2>Departments</h2>
+    <!--search-->
+    <div class="search">
+        <label>
+            <input type="text" id="searchDept" placeholder="Search" />
+            <i class="bi bi-search"></i>
+        </label>
+    </div>
+    <a asp-action="CreateDepartment" class="btn">Add Department</a>
+
+</div>
+<table id="deptTable">
+    <thead>
+        <tr>
+            <td>Department Name</td>
+            <td>Department Description</td>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Department == null)
+        {
+            <tr><td colspan="2" class="text-center">There are Currently No Departments</td></tr>
+        }
+        else
+        {
+            @foreach (var d in Model.Department)
+            {
+                if (d.IsArchived == false)
+                {
+                    <tr>
+                        <td>@d.DepartmentName</td>
+                        <td>@d.DepartmentDesc</td>
+                        <td><a class="btn" asp-action="UpdateD" asp-route-id="@d.DepartmentId">Edit</a></td>
+
+                        <td>
+                            <form asp-action="DeleteD" method="post" asp-route-id="@d.DepartmentId">
+                                <button class="btn">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+        }
+    </tbody>
+</table>

@@ -1,0 +1,62 @@
+﻿@model List<ServiceMessage>
+
+@{
+    ViewData["Title"] = "Service Messages";
+}
+<link rel="stylesheet" href="/css/servicemessage.css" />
+
+<section>
+    <div class="section section-bg"> <!-- Creating a section with a background -->
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Service Messages</h2> <!-- Title for the section -->
+            </div>
+            <div class="table-wrapper"> <!-- Creating a table for displaying service messages -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <!-- Table headers -->
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Subject</th>
+                            <th>Message</th>
+                            <th>Date Sent</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var message in Model)
+                        {
+                            <tr>
+                                <!-- Displaying ServiceMessage properties in table cells -->
+                                <td>@message.ServiceMessageID</td>
+                                <td>@message.Name</td>
+                                <td>@message.Email</td>
+                                <td>@message.Subject</td>
+                                <td>@message.Message</td>
+                                <td>@message.DateSent?.ToString("yyyy-MM-dd HH:mm:ss")</td> <!-- Displaying DateSent formatted as string -->
+                                <form asp-action="DeleteSM" method="post" asp-route-id="@message.ServiceMessageID">
+                                    <button class="btn">Delete</button> <!-- Button to delete a ServiceMessage -->
+                                </form>
+                            </tr>
+
+
+                            <!-- Conditional rendering for archived messages -->
+                            if (message.IsArchived == false) 
+                                {
+                                    <tr>
+                                        <td>
+                                            <form asp-action="DeleteSM" method="post" asp-route-id="@message.ServiceMessageID">
+                                            <button class="btn">Delete</button> <!-- Button to delete an archived ServiceMessage -->
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

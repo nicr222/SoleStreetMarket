@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Register";
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/loginadvanced.css" />
+}
+<script src="/js/accountvalidate.js" ></script>
+
+<main>
+    <div class="container">
+
+        <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+            
+            
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+
+              <div class="card mb-3" style="border: 1.5px solid #5c9ead;">
+
+                <div class="card-body">
+
+                  <div class="pt-4 pb-2">
+                    <h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
+                    <p class="text-center small">Enter your personal details to create account</p>
+                  </div>
+
+                   <form asp-controller="Account" asp-action="Register" class="row g-3 needs-validation" novalidate method="post">
+                    <div class="col-12">
+                      <label for="yourName" class="form-label">Your Name</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person-check"></i></span>
+                            <input type="text" name="Name" class="form-control" id="yourName" required>
+                            <div class="invalid-feedback">Please, enter your name!Name should only contain letters and spaces.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourEmail" class="form-label">Your Email</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-envelope"></i></span>
+                        <input type="email" name="Email" class="form-control" id="yourEmail" required>
+                        <div class="invalid-feedback">Please enter a valid Email adddress!</div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourPhone" class="form-label">Your Phone Number</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-telephone"></i></span>
+                      <input type="tel" name="Phone" class="form-control" id="yourPhone" required>
+                      <div class="invalid-feedback">Invalid Phone Number. Please enter 10 to 15 numeric characters.</div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-person"></i></span>
+                        <input type="text" name="Username" class="form-control" id="yourUsername" required>
+                        <div class="invalid-feedback">Please choose a username.</div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="yourPassword" class="form-label">Password</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend"><i class="bi bi-key"></i></span>
+                      <input type="password" name="Password" class="form-control" id="yourPassword" required>
+                      <div class="invalid-feedback">Please enter your password!Password should be at least 8 characters long.</div>
+                    </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
+                        <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="#">terms and conditions</a></label>
+                        <div class="invalid-feedback">You must agree before submitting.</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary w-100" type="submit">Create Account</button>
+                    </div>
+                    <div class="col-12">
+                    <p class="small mb-0">Already have an account? <a href=@Url.Action("LogIn", "Account") method="post">Log in</a></p>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+</main>

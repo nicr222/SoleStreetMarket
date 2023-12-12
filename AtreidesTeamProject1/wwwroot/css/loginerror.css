@@ -1,0 +1,25 @@
+﻿/* Error Message Styling */
+.alert {
+    padding: 0.75rem 1.25rem; /* Spacing inside the alert box */
+    margin-bottom: 1rem; /* Spacing below the alert box */
+    position: relative; /* To position the pseudo-element */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Start align content */
+}
+
+.alert-danger {
+    color: #721c24; /* Dark red text for contrast and readability */
+}
+
+    .alert-danger::before {
+        align-content: center;
+        display: block; /* Make it a block element to apply margin */
+        margin-right: 0.5rem; /* Space between symbol and text */
+        font-size: 1.5em; /* Larger icon size */
+    }
+
+/* Error Message Text Styling */
+.text-danger {
+    font-weight: bold; /* Bold text for importance */
+}

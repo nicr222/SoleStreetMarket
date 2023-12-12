@@ -1,0 +1,43 @@
+﻿@model AtreidesTeamProject1.Models.AllModels
+
+
+@{
+}
+
+<div class="cardHeader">
+    <h2>Recent Orders</h2>
+    <a href="#" class="btn">View All</a>
+</div>
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Date</td>
+            <td>Quantity</td>
+            <td>Total</td>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Sales == null)
+        {
+            <tr><td colspan="4" class="text-center">There are Currently No Orders</td></tr>
+        }
+        else
+        {
+            //This will grab the 6 newest sales from the table and put them in descending order.
+            var newestSales = Model.Sales.OrderByDescending(s => s.OrderDate).Take(6);
+            //loops through the 6 sales and displays them to the table.
+            @foreach (var s in newestSales)
+            {
+                <tr>
+                    <td>@s.Name</td>
+                    <td>@s.OrderDate</td>
+                    <td>@s.Quantity</td>
+                    <td>$@s.Total</td>
+
+                </tr>
+            }
+        }
+        
+    </tbody>
+</table>

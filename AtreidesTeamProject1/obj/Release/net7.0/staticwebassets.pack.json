@@ -1,0 +1,497 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\AtreidesTeamProject1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AtreidesTeamProject1.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\EditProfileValidation.css",
+      "PackagePath": "staticwebassets\\css\\EditProfileValidation.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\FAQ.css",
+      "PackagePath": "staticwebassets\\css\\FAQ.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\cartInfo.css",
+      "PackagePath": "staticwebassets\\css\\cartInfo.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\contact.css",
+      "PackagePath": "staticwebassets\\css\\contact.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\create.css",
+      "PackagePath": "staticwebassets\\css\\create.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\createForms.css",
+      "PackagePath": "staticwebassets\\css\\createForms.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\employee.css",
+      "PackagePath": "staticwebassets\\css\\employee.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\employeePortal.css",
+      "PackagePath": "staticwebassets\\css\\employeePortal.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\employeeRegisterValidationErrorMessage.css",
+      "PackagePath": "staticwebassets\\css\\employeeRegisterValidationErrorMessage.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\error.css",
+      "PackagePath": "staticwebassets\\css\\error.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\loginadvanced.css",
+      "PackagePath": "staticwebassets\\css\\loginadvanced.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\loginerror.css",
+      "PackagePath": "staticwebassets\\css\\loginerror.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\product.css",
+      "PackagePath": "staticwebassets\\css\\product.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\servicemessage.css",
+      "PackagePath": "staticwebassets\\css\\servicemessage.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\css\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\css\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\Values.png",
+      "PackagePath": "staticwebassets\\img\\Values.png"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\Vision.png",
+      "PackagePath": "staticwebassets\\img\\Vision.png"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\cartimage.png",
+      "PackagePath": "staticwebassets\\img\\cartimage.png"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\customer.png",
+      "PackagePath": "staticwebassets\\img\\customer.png"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\hipsterLooking.jpeg",
+      "PackagePath": "staticwebassets\\img\\hipsterLooking.jpeg"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\joshaboutphoto.png",
+      "PackagePath": "staticwebassets\\img\\joshaboutphoto.png"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\looking1.jpg",
+      "PackagePath": "staticwebassets\\img\\looking1.jpg"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\lucasaboutphoto.png",
+      "PackagePath": "staticwebassets\\img\\lucasaboutphoto.png"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\manLooking.jpg",
+      "PackagePath": "staticwebassets\\img\\manLooking.jpg"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\manPointing.jpg",
+      "PackagePath": "staticwebassets\\img\\manPointing.jpg"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\mission.png",
+      "PackagePath": "staticwebassets\\img\\mission.png"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\moreLooking.jpg",
+      "PackagePath": "staticwebassets\\img\\moreLooking.jpg"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\nicaboutphoto.png",
+      "PackagePath": "staticwebassets\\img\\nicaboutphoto.png"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\phooaboutphoto.png",
+      "PackagePath": "staticwebassets\\img\\phooaboutphoto.png"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\value.png",
+      "PackagePath": "staticwebassets\\img\\value.png"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\wall2.jpg",
+      "PackagePath": "staticwebassets\\img\\wall2.jpg"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\img\\wallOShoes.jpg",
+      "PackagePath": "staticwebassets\\img\\wallOShoes.jpg"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\404.js",
+      "PackagePath": "staticwebassets\\js\\404.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\About.js",
+      "PackagePath": "staticwebassets\\js\\About.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\Contact.js",
+      "PackagePath": "staticwebassets\\js\\Contact.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\ProductCreate.js",
+      "PackagePath": "staticwebassets\\js\\ProductCreate.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\accountvalidate.js",
+      "PackagePath": "staticwebassets\\js\\accountvalidate.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\aos.js",
+      "PackagePath": "staticwebassets\\js\\aos.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\aos.js.map",
+      "PackagePath": "staticwebassets\\js\\aos.js.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\cart.js",
+      "PackagePath": "staticwebassets\\js\\cart.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\cartInfo.js",
+      "PackagePath": "staticwebassets\\js\\cartInfo.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\employeeRegisterValidation.js",
+      "PackagePath": "staticwebassets\\js\\employeeRegisterValidation.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\faq.js",
+      "PackagePath": "staticwebassets\\js\\faq.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\js\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\portal.js",
+      "PackagePath": "staticwebassets\\js\\portal.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\profile.js",
+      "PackagePath": "staticwebassets\\js\\profile.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\profileValidation.js",
+      "PackagePath": "staticwebassets\\js\\profileValidation.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\search.js",
+      "PackagePath": "staticwebassets\\js\\search.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\servicemessagevalidation.js",
+      "PackagePath": "staticwebassets\\js\\servicemessagevalidation.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\js\\swiper-bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Courses\\Software Architecture\\GIT\\AtreidesTeamProject1\\AtreidesTeamProject1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.AtreidesTeamProject1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.AtreidesTeamProject1.props",
+      "PackagePath": "build\\AtreidesTeamProject1.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.AtreidesTeamProject1.props",
+      "PackagePath": "buildMultiTargeting\\AtreidesTeamProject1.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.AtreidesTeamProject1.props",
+      "PackagePath": "buildTransitive\\AtreidesTeamProject1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

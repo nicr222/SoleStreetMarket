@@ -1,0 +1,48 @@
+﻿@model Item
+@{
+    <!-- Include stylesheets for the page -->
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="~/css/employeeRegisterValidationErrorMessage.css" />
+}
+
+<!-- Main container for the page -->
+<div class="container">
+    <!-- Section for item registration -->
+    <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                    <!-- Card for item registration -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="pt-4 pb-2">
+                                <!-- Title and description -->
+                                <h5 class="card-title text-center pb-0 fs-4">Add Item</h5>
+                                <p class="text-center small">Enter the Item details</p>
+                            </div>
+
+                            <!-- Form for creating a new item -->
+                            <form method="post" asp-action="CreateItem">
+                                <!-- Item Name input -->
+                                <div class="form-group">
+                                    <label for="name">Item Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" asp-for="Name" required>
+                                </div>
+
+                                <!-- Description input -->
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea class="form-control" name="description" id="description" asp-for="Description" required></textarea>
+                                </div>
+
+                                <!-- Submit button -->
+                                <div class="text-center"><button type="submit">Create Item</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

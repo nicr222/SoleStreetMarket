@@ -1,0 +1,102 @@
+﻿:root {
+    --primary-color-rgb: 255, 0, 0; /* example RGB value */
+}
+
+.section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-bg {
+    background-color: #f3f5fa;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+    .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #326273;
+    }
+
+        .section-title h2::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: #ddd;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
+
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: #5c9ead;
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
+
+    .section-title p {
+        margin-bottom: 0;
+    }
+
+
+/* Card */
+.card {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.card-header,
+.card-footer {
+    border-color: #ebeef4;
+    background-color: #fff;
+    color: #798eb3;
+    padding: 15px;
+}
+
+.card-title {
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #012970;
+    font-family: "Poppins", sans-serif;
+}
+
+    .card-title span {
+        color: #899bbd;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+
+.card-body {
+    padding: 0 20px 20px 20px;
+}
+
+    .card .card-body .needs-validation .invalid-feedback {
+        display: none; /* By default, don't show until validated */
+        color: red;
+        margin: 0 0 15px 0;
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .card .card-body .needs-validation:invalid .invalid-feedback {
+        display: block; /* Show only when the form or field is invalid */
+    }
+
